@@ -4,23 +4,23 @@
   }
 }
 
+@media (min-width: 900px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero {
     font-size: 15px;
   }
 }
 
-@media (max-width: 894px) {
-  .header-title {
-    display: none;
-  }
-
-  .header-logo {
-    text-align: left;
-  }
-
+@media (max-width: 900px) {
   .hero {
-    padding: 4vmax;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    padding: 0 4vmax;
     font-size: 14px;
     gap: 5em;
     flex-direction: column;
@@ -62,10 +62,6 @@
   .contact-icons img {
     height: 76px;
     width: 76px;
-  }
-
-  .dark-mode {
-    position: absolute;
   }
 }
 
@@ -110,6 +106,7 @@
 
   .hero {
     font-size: 12px;
+    margin-bottom: 3rem;
   }
 
   .hero-description {
@@ -147,11 +144,6 @@
   .work-section,
   .contact-section {
     font-size: 10px;
-  }
-
-  .dark-mode {
-    bottom: 5.5rem;
-    left: -2rem;
   }
 
   .flying-btn {
