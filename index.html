@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+  </head>
+  <body>
+    <!-- header section -->
+    <header>
+      <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+      </div>
+
+      <div class="header-container">
+        <span class="header-title">PORTFOLIO</span>
+
+        <div class="header-logo">
+          <span onclick="moveToHome()">tsuki</span>
+        </div>
+
+        <nav>
+          <img
+            class="ham-menu"
+            src="assets/icons8-menu.svg"
+            alt="menu logo"
+            onclick="sideMenu()"
+          />
+          <div class="nav-list">
+            <ul>
+              <li onclick="moveToWork()">WORK</li>
+              <li onclick="moveToAbout()">ABOUT</li>
+              <li onclick="moveToContact()">CONTACT</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <section id="home" class="hero">
+      <div class="hero-description">
+        <h1>
+          FRONTEND <br />
+          DEVELOPER <span style="color: #e33838">.</span>
+        </h1>
+        <p>
+          I like to create frontend products with <br />
+          great user experiences.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <div class="img-border"></div>
+        <img src="assets/pfp.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-section">
+      <div class="about-content">
+        <div class="about-intro">
+          <div>
+            <h2>HEY, I'M ABHISHEK SHARMA</h2>
+          </div>
+          <p>
+            Frontend developer based in Delhi, with a particular passion for
+            development, creativity and communication.
+          </p>
+        </div>
+
+        <div class="skills-span">
+          <span>My skills</span>
+        </div>
+
+        <div class="skills">
+          <img src="assets/icons8-html-5.svg" alt="html logo" />
+          <img src="assets/icons8-css3.svg" alt="css logo" />
+          <img src="assets/icons8-js.svg" alt="js logo" />
+          <img src="assets/icons8-git.svg" alt="git logo" />
+          <img src="assets/icons8-figma.svg" alt="react logo" />
+          <img src="assets/icons8-sass.svg" alt="sass logo" />
+          <img src="assets/icons8-typescript.svg" alt="typescript logo" />
+          <img src="assets/icons8-bash.svg" alt="bash logo" />
+          <img src="assets/icons8-react-native.svg" alt="react logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- work section -->
+    <section id="work" class="work-section">
+      <div class="work-title">
+        <h2>my works</h2>
+      </div>
+
+      <div class="splide" id="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="assets/pfp.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/pfp.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/pfp.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/pfp.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/pfp.jpeg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="assets/pfp.jpeg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-title">
+        <h2>contact</h2>
+      </div>
+      <div class="contact-icons">
+        <div class="hr-line"></div>
+        <a href="">
+          <img src="assets/icons8-linkedin.svg" alt="linkedin logo" />
+        </a>
+        <a href="">
+          <img src="assets/icons8-github-white.svg" alt="github logo" />
+        </a>
+        <a href="">
+          <img src="assets/icons8-instagram.svg" alt="instagram logo" />
+        </a>
+        <a href="">
+          <img src="assets/icons8-twitter.svg" alt="twitter logo" />
+        </a>
+        <a href="">
+          <img src="assets/icons8-codepen-white.svg" alt="codepen logo" />
+        </a>
+        <div class="hr-line"></div>
+      </div>
+
+      <div class="flying-btn">
+        <button onclick="showForm()">Contact Me</button>
+        <button>
+          <a href="assets/resume.pdf" download>My Resume</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- form section -->
+    <div class="form-container" id="formShow">
+      <div class="form-wrapper">
+        <div class="form-title">
+          <span> CONTACT ME </span>
+        </div>
+        <div class="form-body">
+          <form action="" method="get">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="NAME"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-input"
+                placeholder="EMAIL"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                class="form-input"
+                pattern="[0-9]"
+                maxlength="10"
+                placeholder="CONTACT NO"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-input"
+                rows="3"
+                placeholder="YOUR MESSAGE"
+              ></textarea>
+            </div>
+            <div class="form-group buttons">
+              <button type="button" class="form-button" onclick="closeForm()">
+                CANCEL
+              </button>
+              <button type="reset" class="form-button">RESET</button>
+              <button type="submit" class="form-button">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- dark mode -->
+    <div class="dark-mode">
+      <span onclick="darkMode()">LIGHT MODE</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
