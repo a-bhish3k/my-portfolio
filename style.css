@@ -80,7 +80,6 @@ header {
 .header-logo {
   width: 24%;
   text-align: right;
-  padding-bottom: 5px;
 }
 
 .header-logo span {
@@ -198,7 +197,7 @@ nav li {
 .skills img:hover {
   transform: translateY(-5px);
   transition: all 0.3s ease;
-  filter: drop-shadow(0 12px 2px #1e1e1ee3);
+  filter: drop-shadow(0 12px 2px #303030e3);
 }
 
 /* work section */
@@ -261,7 +260,7 @@ nav li {
 .contact-icons a:hover {
   transform: translateY(-8px);
   transition: all 0.3s ease;
-  filter: drop-shadow(0 12px 2px #1e1e1ee3);
+  filter: drop-shadow(0 12px 2px #303030e3);
 }
 
 /* form section */
