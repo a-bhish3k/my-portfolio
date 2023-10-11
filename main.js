@@ -77,7 +77,16 @@ function closeForm() {
 }
 
 // dark mode
+let favicon = document.querySelector('link[rel="icon"]');
 
 function darkMode() {
   document.body.classList.toggle("light-mode");
+
+  if (favicon.type == "image/png") {
+    favicon.href = "assets/favicon-sun.svg";
+    favicon.type = "image/svg";
+  } else {
+    favicon.href = "assets/favicon-moon.png";
+    favicon.type = "image/png";
+  }
 }
