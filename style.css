@@ -260,7 +260,7 @@ nav li {
 .contact-icons a:hover {
   transform: translateY(-8px);
   transition: all 0.3s ease;
-  filter: drop-shadow(0 12px 2px #303030e3);
+  filter: drop-shadow(0 12px 2px #2e2e2ee3);
 }
 
 /* form section */
