@@ -272,7 +272,7 @@ nav li {
   bottom: 6rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .flying-btn button {
@@ -406,6 +406,7 @@ nav li {
 .dark-mode img {
   width: 26px;
   height: 26px;
+  cursor: pointer;
 }
 
 .light-mode {
