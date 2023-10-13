@@ -220,6 +220,7 @@ nav li {
   border-radius: 8px;
   transition: transform 400ms;
   transform: scale(0.8);
+  border: 1px solid #1212123f;
 }
 
 .splide__slide.is-active img {
