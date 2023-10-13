@@ -215,11 +215,14 @@ nav li {
 }
 
 .splide__slide img {
+  height: 500px;
+  width: 400px;
   display: block;
   width: 100%;
   border-radius: 8px;
   transition: transform 400ms;
   transform: scale(0.8);
+  object-fit: cover;
 }
 
 .splide__slide.is-active img {
