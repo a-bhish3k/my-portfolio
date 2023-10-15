@@ -6,6 +6,7 @@ let splide = new Splide(".splide", {
   focus: "center",
   updateOnMove: true,
   padding: "2%",
+  pagination: false,
   breakpoints: {
     1280: {
       perPage: 1,
