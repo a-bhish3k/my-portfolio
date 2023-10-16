@@ -10,6 +10,18 @@
   }
 }
 
+@media (min-width: 600px) {
+  .splide .splide__arrow {
+    height: 40px;
+    width: 40px;
+  }
+
+  .splide .splide__arrow svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+
 @media (max-width: 1200px) {
   .hero {
     font-size: 15px;
@@ -92,8 +104,13 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #ea1d6fe3;
+    backdrop-filter: blur(2px);
+    background-color: #181818e6;
     border-bottom-left-radius: 300px;
+  }
+
+  .light-mode .menu-toggle {
+    background-color: #e7e7e7e6;
   }
 
   .nav-list ul {

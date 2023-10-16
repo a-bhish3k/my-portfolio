@@ -56,7 +56,7 @@ h2 {
 
 .progress-bar {
   height: inherit;
-  background: #d21818e3;
+  background: #ff0000c2;
   width: 0%;
 }
 
@@ -70,7 +70,7 @@ header {
 }
 
 .header-container {
-  padding: 1.8rem 3rem 1.3rem;
+  padding: 1.6rem 3rem 1.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,7 +259,7 @@ nav li {
   height: 92%;
   width: 92%;
   bottom: 4%;
-  border-radius: 8px;
+  border-radius: 12px;
   transition: all 0.5s ease-in;
 }
 
@@ -273,8 +273,8 @@ nav li {
 
 .contact-section {
   position: relative;
-  padding-top: 12rem;
-  padding-bottom: 18rem;
+  padding-top: 8rem;
+  padding-bottom: 16rem;
 }
 
 .contact-title {
@@ -457,6 +457,10 @@ nav li {
   color: #121212;
   background: #fff;
   transition: all 0.8s ease-in-out;
+}
+
+.light-mode .progress-bar {
+  background: #ff0000;
 }
 
 .light-mode .header-container {
