@@ -74,13 +74,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #121212;
+  background-color: #0f0f0f;
   border-bottom: 1px solid #ffffff1a;
   transition: background-color 0.8s ease-in-out;
 }
 
 .header-logo {
-  width: 24%;
+  width: 25%;
   text-align: right;
 }
 
