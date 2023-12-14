@@ -18,6 +18,6 @@ Welcome to my personal portfolio! This project showcases my technical proficienc
 
 # Live website
 
-- Explore the live website [here](http://https://a-bhish3k.github.io/my-portfolio/).
+- Explore the live website [here](https://a-bhish3k.github.io/my-portfolio/).
 
 Thank you for checking out my portfolio! If you have any questions or suggestions, feel free to reach out.
